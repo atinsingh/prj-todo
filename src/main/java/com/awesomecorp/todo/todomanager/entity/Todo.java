@@ -4,6 +4,7 @@ package com.awesomecorp.todo.todomanager.entity;
 // Tables ->  Column and Row
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.util.Date;
 
@@ -15,7 +16,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "MY_TODO_LIST" )
-
+@Data
 public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
